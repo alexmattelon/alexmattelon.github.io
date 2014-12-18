@@ -38,5 +38,18 @@ animMeter();
             if($targetPanel.selector=='#resume'){
                     animMeter();
             }
-        });
-    });
+      });
+      
+      // Language selection
+      $(".FR").hide(); 
+      $('.button-fr').click(function(){
+        $(".EN").hide(); 
+        $(".FR").show(); 
+
+      });
+      $('.button-en').click(function(){
+        $(".FR").hide(); 
+        $(".EN").show(); 
+
+      });
+});

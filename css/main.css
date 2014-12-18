@@ -88,6 +88,7 @@ a {
   transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
 }
 a:hover, a:focus, a:active { text-decoration: none; border: none; color: #036797 }
+
 /* MEDIA */
 figure {margin: 0}
 img, object, embed, video {max-width: 100%; _width: 100%} /* Fluid images */
@@ -128,7 +129,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 
 /* Wrapper */
 .main{
-  padding-top: 20px;
+  padding-top: 10px;
   max-width: 1020px;
 }
 .wrapper{
@@ -178,7 +179,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 
 /* Header */
 #header{
-  margin-bottom: 2em;
+  margin-bottom: 20px;
 }
 #header #logo{
   text-align: center;
@@ -256,6 +257,10 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 /* INFO */
 .info-wrap{
     
+}
+
+.flags{
+    margin-left: 8.2%;
 }
 
 /* Photo */
@@ -361,7 +366,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   margin-bottom: 2em;
   list-style-type: none;
 }
-.work li span{
+.work .label{
   float: right;
 }
 .work li h5, h6{
@@ -384,6 +389,16 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   margin-left: 20px; 
   list-style: disc;
   display: list-item; 
+}
+
+/* Cursor */
+.button-fr {
+    cursor:pointer;
+    margin-bottom:6px;
+}
+.button-en {
+    cursor:pointer;
+    margin-bottom:6px;
 }
 
 /* Skills */
@@ -416,14 +431,6 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
     padding-right: 3px;
     text-align: right;
     width: 30%; 
-}
-.meter .firstDelim {
-    display: table-cell;
-    width: 50%;
-}
-.meter .secondDelim {
-    display: table-cell;
-    width: 50%;
 }
 /* Meters */
 .meter { 
