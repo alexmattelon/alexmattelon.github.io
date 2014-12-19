@@ -387,14 +387,18 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   display: list-item; 
 }
 
-/* Cursor */
+/* Flags */
 .button-fr {
     cursor:pointer;
-    margin-bottom:6px;
+    position:relative;
+    bottom:-6px;
+    margin-bottom:0px;
 }
 .button-en {
     cursor:pointer;
-    margin-bottom:6px;
+    position:relative;
+    bottom:-6px;
+    margin-bottom:0px;
 }
 
 /* Skills */
@@ -686,7 +690,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 /* Footer */
 footer{
   text-align: center;
-  margin-top: 2em;
+  margin-top: 5px;
   padding: 10px;
   background: rgba(255, 255, 255,.8);
   box-shadow: 0px 4px #ccc;
@@ -697,6 +701,9 @@ footer{
 }
 footer p{
   margin-bottom: 0px;
+}
+.blackIcon{
+    color: #555;
 }
 
 /* media Queries
