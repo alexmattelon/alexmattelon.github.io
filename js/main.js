@@ -16,8 +16,9 @@ $(document).ready( function() {
 	$('#tab-about').click(function() {
 	  $logo.slideUp('slow');
 	});	
-function animMeter(){
-    $(".meter > span").each(function() {
+    
+    function animMeter(){
+        $(".meter > span").each(function() {
                 $(this)
                     .data("origWidth", $(this).width())
                     .width(0)
@@ -25,8 +26,8 @@ function animMeter(){
                         width: $(this).data("origWidth")
                     }, 1200);
             });
-}
-animMeter();
+    }
+    animMeter();
 
       $('#tab-container').easytabs({
         animate			: true,
@@ -45,11 +46,9 @@ animMeter();
       $('.button-fr').click(function(){
         $(".EN").hide(); 
         $(".FR").show(); 
-
       });
       $('.button-en').click(function(){
         $(".FR").hide(); 
         $(".EN").show(); 
-
       });
 });
