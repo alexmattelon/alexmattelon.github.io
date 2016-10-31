@@ -1,5 +1,4 @@
 $(document).ready( function() {
-
 	// Logo
 	var $logo 	= $('#logo');
 	 if (location.href.indexOf("#") != -1) {
@@ -29,26 +28,26 @@ $(document).ready( function() {
     }
     animMeter();
 
-      $('#tab-container').easytabs({
-        animate			: true,
-        updateHash		: true,
-        transitionIn	: 'slideDown',
-        transitionOut	: 'slideUp',
-        animationSpeed	: 600,
-        tabActiveClass	: 'active'}).bind('easytabs:midTransition', function(event, $clicked, $targetPanel){
-            if($targetPanel.selector=='#resume'){
-                    animMeter();
-            }
-      });
-      
-      // Language selection
-      $(".FR").hide(); 
-      $('.button-fr').click(function(){
-        $(".EN").hide(); 
-        $(".FR").show(); 
-      });
-      $('.button-en').click(function(){
-        $(".FR").hide(); 
-        $(".EN").show(); 
-      });
+	$('#tab-container').easytabs({
+		animate			: true,
+		updateHash		: true,
+		transitionIn	: 'slideDown',
+		transitionOut	: 'slideUp',
+		animationSpeed	: 600,
+		tabActiveClass	: 'active'}).bind('easytabs:midTransition', function(event, $clicked, $targetPanel){
+			if($targetPanel.selector=='#resume'){
+					animMeter();
+			}
+	});
+	  
+	// Language selection
+	$(".FR").hide(); 
+	$('.button-fr').click(function(){
+		$(".EN").hide(); 
+		$(".FR").show(); 
+	});
+	$('.button-en').click(function(){
+		$(".FR").hide(); 
+		$(".EN").show(); 
+	});
 });
