@@ -84,7 +84,7 @@ ul, ol {list-style-position: inside; padding: 0}
 li ul, li ol {margin: 0 1.5em}
 dl dd {margin-left: 1.5em}
 dt {font-family:Futura, "Century Gothic", AppleGothic, sans-serif}
-.noBlt {list-style-type: none;}
+.noBlt {list-style-type: none!important;}
 
 /* HYPERLINKS */
 a {
@@ -394,9 +394,6 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   margin-left: 20px;
   list-style: disc;
   display: list-item;
-}
-.work li p.noBullet{
-  list-style: unset;
 }
 
 /* Flags */
